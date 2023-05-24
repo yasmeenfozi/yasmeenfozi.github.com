@@ -1,0 +1,104 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+     overflow-y: hidden;
+}
+
+.container {scroll-snap-type: x mandatory;
+display: flex;
+-webkit-overflow-scrolling: touch;
+overflow-x: auto;
+}
+
+.child
+{
+    scroll-snap-align: start;
+    border-right: 1px solid white;
+    padding: 1rem;
+    text-align:center;
+    position: relative;
+    min-width: 100vw;
+    height:100vh;
+
+}
+
+.bg-1
+{
+    background-color: #79bdb9;
+    font-family: Lato,Lucida Grande,Tahoma,sans-serif;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.PP
+{
+    width: 230px;
+    height: 230px;
+    margin-top: 13%;
+}
+
+h1{
+    font-size: 40px;
+
+}
+h2{
+    font-size: 18px;
+    
+}
+
+h3
+{
+    color: white;
+    text-align: right;
+    margin-top: 13%;
+    
+}
+.logos
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo
+{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    line-height: 20px;
+}
+
+
+.bg-2
+{
+    background-color: #AFEEEE;
+    font-family: Lato,Lucida Grande,Tahoma,sans-serif;
+    color: white;
+    font-weight: bold;
+
+}
+
+.slide2text
+{
+    position: absolute;
+    right: 30px;
+    width: 500px;
+    border: 3px solid #73AD21;
+    padding: 30px;
+    margin-right: 25%;
+}
+
+
+
+.bg-3
+{
+    background-color: wheat;
+}
