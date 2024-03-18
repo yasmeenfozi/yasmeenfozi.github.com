@@ -1,39 +1,471 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="thestylesheet.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-          </style>
-    </head>
-    <body>
-        <div class="container">
-        <div class="child bg-1">
-            <img src="MyWebsite/Profile Pic/meweb.PNG" class="PP" />
-            <h1>Yasmeen Saeed</h1>
-            <h2>Trent University '22. Computer Science Major.</h2>
-            <div class="logos">
-            <a href="mailto:yasmeenfozi@gmail.com"> <img src="MyWebsite/Logos/email.webp" class="logo" /> </a>
-            <a href="https://www.linkedin.com/in/yameensaeed/"><img src="MyWebsite/Logos/LinkedInLogo.png" class="logo"/></a>
-            <a href="https://www.instagram.com/yasmeenfozi/"><img src="MyWebsite/Logos/insta.png" class="logo"/></a>
-          </div>
-          <h3>Swipe Left 4 More --> </h3>
+<html lang="en">
+<head>
+    
+    <!-- mobile specific metas 
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="thestylesheet.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+    </style>
+     
+
+
+</head>
+
+<body>
+
+    <!-- site ribbon/ header
+    ================================================== -->
+    <header class="s-header">
+      <nav class="nav-bar">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="MyWebsite/Logos/YF_logo.png" alt="Homepage">
+            </a>
         </div>
         
-        <div class="child bg-2">
-            <div class="slide2text">
-           <h1>Who is Yasmeen?</h1>
-           <h2>Meet Yasmeen, a fresh Computer Science graduate based in the beautiful city of Abu Dhabi, UAE.
-                Yasmeen has a passion for web and software development and is currently on the lookout for job opportunities 
-                in this field. She loves creating websites and games in her free time, always pushing the limits of what she 
-                can do with her skills. With her drive and creativity,  Yasmeen is sure to make a great addition to any team 
-                that is looking for a dedicated and talented developer.</h2>
+        
+        <!-- <nav class="header-nav-wrap"> -->
+            <div>
+            <ul class="header-navigation">
+                    <li class="current"><a class="smoothscroll active" href="#intro" title="intro">Intro</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#skills" title="skills">Skills</a></li>
+                    <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="contact us">Contact</a></li>
+            </ul>
+            </div>
+            <div>
+                <ul class="header-socials">
+                    <li><a href="https://www.linkedin.com/in/yameensaeed/"><i class="fab fa-linkedin fa-2x" style="color: #9fd3c7; " aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-instagram fa-2x" style="color: #9fd3c7;" aria-hidden="true"></i></a></li>  <!-- end ADD insta -->
+                    <li><a href="mailto:yasmeenfozi@gmail.com"><i class="fa fa-envelope fa-2x" style="color: #9fd3c7;" aria-hidden="true"></i></a></li> <!-- end ADD linked in -->
+                </ul>
+            </div>   
+        <!--</nav>-->
+       </nav>
+    </header> <!-- end s-ribbon -->
+
+    <!-- intro
+    ================================================== -->
+    <main class="main-page">
+    <section id="intro" class="s-intro" >
+
+        <div class="intro-content">
+            <div class="s-intro-name-role">
+                <h2>Hi, I'm Yasmeen</h2>
+                <h1> 
+                    Data Analyst <br>
+                    Web Developer <br> 
+                         
+                </h1>
+
+            </div>
+
+            <div class="s-intro-scroll">
+                <a href="#about"> Scroll for more  </a> 
+            </div>
+           <!-- <div class="intro-img">
+                
+                    <img src="MyWebsite/Images/746.png" alt="">
+                
+            </div>-->
+        </div>
+        
+    </section>
+    </main> <!-- end intro -->
+
+
+<!-- About me
+================================================== -->
+    <section id="about" class="s-about">
+        <div class="full-about">
+        <div class = "about-me">
+            <h2> About me </h2>
+        </div>
+
+        <div class="about-me-row">
+            <div class="about-me-col">
+                <p class="first-p">
+                    &nbsp;&nbsp; Hello, I'm Yasmeen Fozi, a passionate computer science enthusiast based in the vibrant city of Abu Dhabi, UAE. I hold a
+                    Bachelor of Science degree in Computer Science from Trent University, where I honed my skills and developed a strong
+                    foundation in this ever-evolving field.
+                </p>    
+                <p class="m-p">
+                    My journey in the world of technology has been nothing short of exhilarating. I've always been captivated by the
+                    limitless possibilities that the digital realm offers, and this fascination has driven me to create this website from
+                    scratch. This website serves as my personal profile, a canvas to showcase both my past accomplishments and the exciting
+                    projects I have in store for the future.
+                </p>   
+                <img src="MyWebsite/Images/meweb.png" alt="Image">
+
+                
+                
+                
+                <!--
+                <p class="m-p">
+                    One of my primary areas of interest is Data Analysis. The power of data to uncover insights, make informed decisions,
+                    and drive innovation is something that deeply resonates with me. I enjoy delving into data sets, extracting meaningful
+                    information, and translating it into actionable strategies. Data Analysis allows me to explore the intricacies of
+                    various domains and discover hidden patterns that can have a profound impact.
+                </p>
+                <p class="m-p">
+                    Beyond Data Analysis, I have a creative side that finds expression in designing Graphical User Interfaces (GUIs) and
+                    crafting engaging websites. The art of blending aesthetics with functionality is a challenge I relish. Building
+                    user-friendly interfaces and websites that provide seamless experiences is not only professionally rewarding but also
+                    personally satisfying.
+                </p>    
+                <p class="m-p">
+                    As I navigate the dynamic landscape of computer science, I remain committed to continuous learning and growth. Every
+                    project I undertake is an opportunity to expand my skill set, experiment with new technologies, and contribute to the
+                    ever-evolving world of technology.
+                </p>
+                <p class="m-p">
+                    Living in Abu Dhabi, a city known for its fusion of tradition and innovation, provides an inspiring backdrop for my
+                    endeavors. I am excited about the future and the limitless possibilities it holds in the realm of computer science.
+                    Thank you for visiting my website and joining me on this exciting journey. Please feel free to explore my projects and
+                    reach out if you'd like to collaborate or share insights. Together, we can make the digital world a more fascinating and
+                    functional place.
+                </p>-->
             </div>
         </div>
-        <div class="child bg-3">
+     
+
+
+
+        <div class="accomp">
+            <div class="achievments">
+                <h1> Accomplishments & Certification </h1>
+                            <hr>
+                <ul>
+                    <li><h2> Deans Honor Roll </h2></li>
+                    <h3> Trent University </h3>
+                    <li><h2> Google Data Analytics </h2></li>
+                    <h3> Coursera </h3>
+                </ul>
+            </div>
+        
+            <div class="degree">
+                <h1> Education </h1>
+                <hr>
+                <h2> Bachelor Of Science in Computer Science </h2>
+                <h3> Trent University </h3>
+            </div>
+        
+        </div>
+
+                <div class="resume">
+                    <a href="https://www.linkedin.com/in/yameensaeed/"><button> LinkedIn </button></a>
+                    <a href="https://www.linkedin.com/in/yameensaeed/"><button> Download Resume </button> </a>
+                    <a href="https://www.linkedin.com/in/yameensaeed/"></a><button> GitHub </button></a>
+                
+                </div>
+        </div>
+
+
+    </section>    
+
+    
+<!-- Skills
+================================================== -->
+
+    <section id="skills" class="s-skills">
+
+        <div class="skills-title">
+            <h2>Delve into my</h2>
+            <h1> Skills </h1>
+        </div>
+
+    <div class="box-skills">
+        <div class="tech-skills">
+           
+            <h1 class="skill-title"> Technical Skills </h1>
+
+            <div class="skills-list1">
+                <article>
+                    <span class="heart"> </span> 
+                    <div>
+                    <h1 class="ts-list">HTML </h1>
+                    <h2 class="t-level">Experienced</h2> 
+                    </div>
+                </article>    
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                    <h1 class="ts-list">CSS </h1>
+                    <h2 class="t-level">Experienced</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                    <h1 class="ts-list">Python </h1>
+                    <h2 class="t-level">Intermediate</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Tkinter </h1>
+                        <h2 class="t-level">Basic</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                    <h1 class="ts-list">SQL </h1>
+                    <h2 class="t-level">Experienced</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                    <h1 class="ts-list">PhpMyAdmin </h1>
+                    <h2 class="t-level">Intermediate</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Excel </h1>
+                        <h2 class="t-level">Experienced</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Postgres </h1>
+                        <h2 class="t-level">Intermediate</h2>
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Tableau </h1>
+                        <h2 class="t-level">Intermediate</h2>
+                    </div>
+                </article>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="soft-skills">
+            <h1 class="skill-title"> Soft Skills </h1>
+            <div class="skills-list2">
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Problem Solving </h1>
+                 
+                    </div>
+                </article>
+                
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Communication </h1>
+                      
+                    </div>
+                </article>
+                
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Versatility </h1>
+                    </div>
+                </article>
+                
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Attentive </h1>
             
+                    </div>
+                </article>
+                
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Presistant </h1>
+                   
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Fast Learner </h1>
+                
+                    </div>
+                </article>
+
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Attentive </h1>
+                
+                    </div>
+                </article>
+                
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Presistant </h1>
+                
+                    </div>
+                </article>
+                
+                <article>
+                    <span class="heart"> </span>
+                    <div>
+                        <h1 class="ts-list">Fast Learner </h1>
+                
+                    </div>
+                </article>
+
+            </div>
+
         </div>
     </div>
-    
-    </body>
+    </section>
+
+<!-- Works
+================================================== -->
+
+
+    <section id="works" class="s-works">
+        <div class="works-title">
+            <h2>Delve into some of my</h2>
+            <h1> Projects </h1>
+        </div>
+        <span class="slideshow">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                    <div class="slide" draggable="false">  
+                            <img src="/Users/yasmeensaeed/Documents/GitHub/yasmeenfozi.github.io/MyWebsite/Images/website-image.png" alt="website-img">
+                            
+                            <h1>Profile Website</h1>
+                            <div class="slide-content">
+                            <h2>My portfolio website is a dynamic and visually appealing showcase of my skills and accomplishments. Crafted using a
+                            combination of <b>HTML, CSS, JavaScript, and PHP</b>, it offers a seamless user experience.</h2>
+                            </div>
+                            <a href=""> Github Link </a> 
+                            
+                    </div>
+                    
+                    <div class="slide" draggable="false">
+                            <img src="/Users/yasmeensaeed/Documents/GitHub/yasmeenfozi.github.io/MyWebsite/Images/number-guess.png" alt="website-img" class="guessthenum_img">
+            
+                            <h1>Netflix Data Analysis</h1>
+                            <div class="slide-content">
+                            <h2>My portfolio website is a dynamic and .</h2>
+                            </div>
+                            <a href=""> GitHub Link </a>
+                            
+                    </div>
+                    
+                    <div class="slide" draggable="false">
+                            <img src="/Users/yasmeensaeed/Documents/GitHub/yasmeenfozi.github.io/MyWebsite/Images/calculator.png" alt="website-img">
+                            <h1>Calculator</h1>
+                            <div class="slide-content">
+                            <h2>This interactive calculator simplifies math operations. Its intuitive interface allows
+                            users to input numbers and operators effortlessly, providing essential functions for addition, subtraction,
+                            multiplication, and division. Created using <b>Python and tkinter</b>.</h2>
+                            </div>
+                            <a href="https://github.com/yasmeenfozi/Calculator_Project"> GitHub Link </a>
+                            
+                    </div>
+
+                    
+                    <div class="slide" draggable="false">   
+                            <img src="/Users/yasmeensaeed/Documents/GitHub/yasmeenfozi.github.io/MyWebsite/Images/number-guess.png" alt="website-img" class="guessthenum_img">
+                            <h1>Guess The Number</h1>
+                            <div class="slide-content">
+                            <h2>Using <b>Python</b>, this project challenges users to guess a random number between 0 and 100 within 10 attempts, with helpful
+                            hints along the way.</h2>
+                            </div>
+                            <a href="https://github.com/yasmeenfozi/Guess-the-number"> GitHub Link </a>
+                          
+                    </div>
+
+                    <div class="slide" draggable="false">
+                        <img src="/Users/yasmeensaeed/Documents/GitHub/yasmeenfozi.github.io/MyWebsite/Images/website-img.png"alt="website-img">
+                        <h1>Guess The Number</h1>
+                        <div class="slide-content">
+                            <h2></h2>
+                        </div>
+                        <a href=""> GitHub Link </a>
+                    </div>
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </span>
+    </section>  
+
+
+<!-- Contact
+================================================== -->
+
+    <section id="contact" class="s-contact">
+        <div class="form">
+            <div class="sizing">
+            
+            <h1> Contact Me: </h1>
+                <form action="contact-form-process.php" method="post" class="fcf-contact-form">
+                    <div class="form-area">
+                        <div class="names">
+                            <label> First name: </label>  
+                            <input type="text" class="fcf-form-control" id="FirstName"  name="FirstName" required>
+                            <label> Second name: </label> 
+                            <input type="text" class="fcf-form-control" id="LastName"  name="LastName" required>
+                        </div>
+
+                        <div class="other">
+                            <label> Email: </label> 
+                            <input type="email" class="fcf-form-control" id="Email" name="Email" required>
+                        </div>
+
+                        <div class="message">
+                            <label> Message: </label> 
+                            <textarea type="text" class="fcf-form-control" id="Message"  name="Message" maxlength="3000" required></textarea>
+                        </div>
+
+                        <div class="submit-b">
+                            <input type="submit" value="Submit">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer
+================================================== -->
+    <footer>
+    <p>&copy; 2023 All rights reserved. Developed by Yasmeen Saeed </p>
+    </footer>
+</body>
+
 </html>

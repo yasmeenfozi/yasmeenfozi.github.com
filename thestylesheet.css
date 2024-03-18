@@ -1,5 +1,989 @@
 
 
+/* 
+< Importing font awesome css
+=============================================================>
+*/
+
+@import url("font-awesome/css/fontawesome-all.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: auto;
+}
+
+body{
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+    height: 799px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+< Header Styling begins 
+============================================================== > 
+*/
+header{
+    position: fixed;
+    background-color: #142d4c;
+    width: 100%;
+    height: 5rem;
+    padding-top: 0.5rem;
+    z-index: 2;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo img{
+    height: 5rem;
+    padding-right: 2rem;
+    
+}
+
+.header-socials li{
+        padding-right: 2rem;
+}
+
+.header-navigation a{
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        color: #ececec;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-right: 4rem;
+        padding-left: 2rem;
+        
+}
+
+.header-navigation a:hover {
+    color:  #9fd3c7;
+    transition: ease-in-out 0.3s;
+    
+}
+
+.header-navigation > li > .active{
+    color:  #9fd3c7;
+}
+/*
+.header-navigation{
+    color:  #385170;
+}
+
+.header-navigation .current a {
+    color:  #385170;
+}
+*/
+
+
+
+
+
+/* 
+< Header CSS ends 
+============================================================== > 
+*/
+
+
+/* 
+< Intro CSS begins 
+============================================================== > 
+*/
+
+.main-page{
+    width: 100%;
+    height: 100%;
+    background-image: url('MyWebsite/Images/Bg-img2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+
+
+
+.s-intro{
+    padding-left: 30vh;
+    padding-top: 35vh;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+.s-intro-name-role h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 100px;
+    font-family: "Frank Ruhl Libre", serif;
+    color: lightgray;
+    font-weight: 200;
+}
+
+
+.s-intro-name-role h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color:  #9fd3c7;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.s-intro-scroll a{
+    color: #9fd3c7;
+    font-family: "Roboto", sans-serif;
+    font-weight: 1000;
+    text-decoration: underline;
+
+}
+
+
+.s-intro-scroll a:after{
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    background-color: #142d4c;
+    position: relative;
+
+}
+
+/* 
+< Intro CSS ENDS 
+============================================================== > 
+*/
+
+
+/* 
+< About me CSS starts 
+============================================================== > 
+*/
+
+.s-about{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.full-about{
+    padding-top: 7rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.about-me{
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color: #142d4c;
+    text-shadow: 0 0 3px  #9fd3c7, 0 0 5px  #9fd3c7;
+
+}
+
+.about-me h2{
+    font-weight: 400;
+    
+}
+
+.about-me:after{
+    content: " ";
+    display: flex; 
+    height: 2px;
+    background-color: #385170;
+    position: relative;
+    width: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.about-me-row{
+ margin-top: 1.5rem;
+}
+
+.about-me-col{
+    display: block;
+    column-count: 2;
+    column-gap: 7rem;  
+    
+}
+
+.about-me-col img{
+    width: 90%;
+    height: 90%;
+    border: #142d4c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.first-p, .m-p{
+    font-family: "Roboto",
+        sans-serif;
+    text-align: justify;
+    line-height: 3.2vh;
+    font-size: 16.5px;
+
+}
+.m-p{
+  padding-top: 10px;
+}
+
+.first-p::first-letter {
+    font-size: 40px;
+
+}
+
+.accomp{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.accomp div{
+    width: calc(100% / 2);
+    height: 8rem;
+    border:  #385170;
+    border-width: 3px;
+    border-style:solid;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+
+.accomp h1, .accomp h2, .accomp h3{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.accomp h1{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.accomp hr{
+    margin-bottom: 1rem;
+}
+
+.accomp h2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.accomp h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 6px;
+
+}
+
+.accomp div:last-child{
+    margin-left: 1rem;
+}
+
+
+.resume{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-top: 1rem;
+    
+}
+
+.resume a{
+    display:contents;
+}
+
+.resume button{
+    color: #9fd3c7;
+    background-color:  #385170;
+    border-width: 2px;
+    border-color: #142d4c;
+    border-style:solid;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    width: 30rem;
+    height: 3rem;
+    margin: 1rem;
+    cursor: pointer;
+    
+}
+
+
+
+/*
+.resume button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    max-width: 100%;
+    height: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background-color:  #385170;
+    border-width: 5px;
+    border-color: black;
+    border-style:double;
+    border-radius: 40px;
+    margin-top: 1rem;
+
+}
+*/
+.full-about::after{
+    content: " ";
+    display: block;
+    height: 4px;
+    background-color: #142d4c;
+    width: auto;
+    margin-top: 7rem;
+
+}
+
+
+/* 
+< About me CSS ends 
+============================================================== > 
+*/
+
+/* 
+< Skills CSS starts 
+============================================================== > 
+*/
+
+/* 
+< Heart url as bullet points
+============================================================== > 
+*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+#skills {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #ececec;
+    font-family: "Roboto", sans-serif;
+}
+
+.skills-title {
+    width: 100%;
+    /*height: auto;*/
+    text-align: center;
+    padding-top: 18vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.skills-title h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color: #142d4c;
+}
+
+.skills-title h1 {
+    font-size: 45px;
+    color: #142d4c;
+    text-shadow: 0 0 3px  #9fd3c7, 0 0 5px  #9fd3c7;
+    font-weight: 400;
+
+}
+
+.box-skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+.tech-skills, .soft-skills{
+    flex: 1;
+    margin: 3.5rem;
+    border-style: solid;
+    border-color:  #385170;
+    border-radius: 3vh;
+    border-width: 3px;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.skills-list1, .skills-list2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: initial;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+article{
+    height: 3rem;
+    display: flex;
+    width: 13rem;
+
+}
+
+article h1{
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+article h2{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.skill-title{
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+}
+
+article .heart {
+    cursor: default;
+    width: 20%;
+}
+
+
+.heart:before {
+    font-family: 'entypo', sans-serif;
+    color:  #385170;
+    content: "\2665";
+}
+
+
+/* 
+< Works CSS starts 
+============================================================== > 
+*/
+
+.s-works{
+    display: flex;
+    min-height: 100vh;
+    background: #385170;
+    justify-content: center;
+    padding: 0 10%;
+    /*background-image: url('/Users/yasmeensaeed/Documents/GitHub/yasmeenfozi.github.io/MyWebsite/Images/skills-bg1.png');
+    background-size: 100% 100%;*/
+
+}
+
+.works-title{
+    position: absolute;
+    margin-top: 8rem;
+    font-family: "Roboto", sans-serif;
+    align-content: center;
+    text-align: center;
+    color:#ececec;
+}
+
+.works-title h2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.works-title h1 {
+    font-size: 45px;
+    text-shadow: 0 0 5px  #9fd3c7,0 0 5px  #9fd3c7;
+    
+    font-weight: 400;
+}
+
+.slideshow{
+    margin-top: 14rem;
+    align-items: center;
+    width: 90%;
+    position: relative;
+}
+
+.slideshow i{
+    top:40%;
+    height: 46px;
+    width: 46px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #9fd3c7;
+    border-radius: 50%;
+    margin-bottom: 100rem;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-40%);
+
+}
+
+.slideshow i:first-child{
+    left: -40px;
+    display: none;
+}
+
+.slideshow i:last-child {
+    right: -40px;
+}
+
+.slide-content{
+    height: 105px;
+    margin-bottom: 2rem;
+}
+
+.carousel{
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    /*width: 1100px*/
+    white-space: nowrap;
+    text-align: center;
+
+
+  
+}
+
+.carousel h1{
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+}
+
+.slide{
+    display: inline-block;
+    height: 440px;
+    width: calc(33.3333333% - 20px);
+    margin: 5px;
+    background: #ececec;
+    border:  #142d4c;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style:solid;
+  /*  vertical-align: middle;*/
+
+}
+
+.carousel.dragging{
+    cursor:grab;
+    scroll-behavior: auto;
+}
+
+.carousel div:last-child {
+    margin-right: 0;
+}
+
+
+/*
+.slide img{
+    height: 300px;
+    width:90%;
+    object-fit:cover;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+*/
+
+
+.slide img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border-color:  #385170;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+.carousel h2 {
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    position: inherit;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+.carousel img:nth-child(3) {
+    padding-right: 30rem;
+}
+
+.carousel a{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 1rem;
+    display: block;
+}
+
+
+b{
+font-weight: 500;
+text-decoration: underline;
+}
+
+/* 
+< Contacts CSS starts 
+============================================================== > 
+*/
+
+.s-contact{
+  height: 40%;  
+  color: #ececec;
+  background: #385170;
+  vertical-align: middle;
+  padding-bottom: 10rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizing {
+   display: flex;
+   width: auto;
+   justify-content: space-around;
+}
+/*
+.s-contact::before{
+content: "";
+width: 60%;
+color: white;
+display: flex;
+height: 2px;
+background-color: white;
+
+margin-bottom: 7rem;
+/*margin-left: 18rem;
+ 
+}
+*/
+
+.form::before {
+ content: " ";
+ display: block;
+ height: 4px;
+ background-color: #ececec;
+ width: auto;
+ margin-bottom: 7rem;
+ margin-top: 8rem;
+}
+
+.s-contact h1{
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    text-shadow: 0 0 5px  #0a1b2f, 0 0 5px  #0a1b2f;
+    font-weight: 400;
+}
+
+.submit-b {
+    font-family: "Roboto", sans-serif;
+    margin-top: 5rem;
+    margin-right: 13rem;
+    display: flex;
+    justify-content: end;
+}
+
+.submit-b input{
+    background-color: white;
+    width: 10rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.submit-b input:hover{
+    background-color:  #142d4c;
+    color: white;
+}
+
+
+.form-area{
+    display: flex;
+    grid-gap: 16px;
+    flex-direction: column;
+    align-items: end;
+    width: 40rem;
+   
+}
+
+.form-area div{
+    width: 40rem;
+    height: 3rem;
+}
+
+
+.names input{
+    width: 10.4rem;
+}
+
+label{
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    
+}
+
+.other input {
+    width: 31rem;
+    margin-left: 2.3rem;
+  
+}
+
+
+.message{
+    display: flex;
+}
+
+.message textarea{
+    width: 31rem;
+    height: 7rem;
+    margin-left: 0.9rem;
+    border-radius: 1%;
+    border-color:  #142d4c;
+    border-style: solid;
+    border-width: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    padding: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+}
+
+
+input{
+    font-family:  "Roboto", sans-serif;
+    font-size: medium;
+    border-radius: 1%;
+    border-color:  #142d4c;
+    border-style: solid;
+    border-width: 2px;
+    height: 2rem;
+}
+
+
+/* 
+< Foooter CSS starts 
+============================================================== > 
+*/
+
+footer{
+    background: #142d4c;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+/*
+#skills {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+
+.skills-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 18vh;
+}
+
+.skills-title h2{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.skills-title h1{
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    text-shadow: 0 0 3px  #385170, 0 0 5px  #385170;
+    font-weight: 400;
+
+}
+
+.box-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-skills-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: initial;
+    gap: 2.5rem;
+    justify-content: space-around;
+    column-count: 2;
+     column-gap: 4vh;
+
+}
+
+.tech-skills, .soft-skills{
+    display: flex;
+
+    align-self: center;
+    text-align: center;
+    border-style:ridge;
+    border-color:  #385170;
+    border-radius: 3vh;
+    border-width: 5px;
+    box-sizing: border-box;
+    width: 50vh;
+    height: 50vh;
+    padding: 30px;
+    margin: 30px;
+
+
+}
+
+article {
+    display: flex;
+    width: 5rem;
+    gap: 0.5rem;
+}
+
+.tech-skills h1, .soft-skills h1{
+    padding-bottom: 2rem;
+    margin: 0;
+    font-size: 35px;
+    font-weight: 300;
+
+}
+
+.heart:before {
+    font-family: 'entypo', sans-serif;
+    color:  #385170;
+    content: "\2665";
+}
+
+.heart{
+    margin-right: 1rem;
+}
+
+
+
+
+article .heart {
+    display: flex;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
+.ts-list, .ss-list{
+
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    
+}
+
+.t-level, .s-level{
+    font-size: 19px;
+    padding-left: 3rem;
+}
+
+
+.s-skills li {
+    text-align: left;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 *{
     box-sizing: border-box;
     margin:0;
@@ -81,9 +1065,12 @@ h3
 
 .bg-2
 {
-    background-color: #AFEEEE;
+    background-image: url("MyWebsite/Logos/imagetouse.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
     font-family: 'Concert One', cursive;
     color: navy;
+
     font-weight: bold;
 
 }
@@ -112,8 +1099,9 @@ h3
 
 
 .bg-3
-{
+{background-color: #AFEEEE;
     background-color: wheat;
     font-family: Lato,Lucida Grande,Tahoma,sans-serif;
     color: black;
 }
+*/

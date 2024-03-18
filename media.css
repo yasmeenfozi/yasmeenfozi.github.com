@@ -1,0 +1,239 @@
+/* 
+< Media query max-width: 1200px
+============================================================== > 
+*/
+
+@media screen and (max-width: 1200px) {
+
+/* 
+< Media query header (width: 1200px)
+============================================================== > 
+*/
+    .header-navigation a , .header-socials a{
+        padding: 1rem;
+        font-size: 17px;
+
+    }
+
+    .header-socials li {
+        padding: 1rem;
+    }
+
+    .header-logo img {
+        height: 5rem;
+    }
+
+/* 
+< Media query main (width: 1200px)
+============================================================== > 
+*/
+
+    .s-intro{
+        padding-left: 20vh;
+        
+    }
+
+    .s-intro-name-role h1 {
+        font-size: 580%;
+        font-family: "Frank Ruhl Libre", serif;
+        color: lightgray;
+        font-weight: 200;
+    }
+    
+    .s-intro-name-role h2 {
+            font-size: 130%;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+    }
+
+/* 
+< Media query about (width:   1200px)
+============================================================== > 
+*/
+
+    .full-about{
+   
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .about-me:after{
+        width: auto;
+    }
+
+
+/* 
+< Media query works (width:   1200px)
+============================================================== > 
+*/
+    .slide{
+        width: calc(49.99% - 20px);
+    }
+   
+}
+
+/* 
+< Media query works (width:   1200px)
+============================================================== > 
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* 
+< Media query max-width: 800px
+============================================================== > 
+*/
+
+@media screen and (max-width: 800px){
+
+/* 
+< Media query header (width: 800)
+============================================================== > 
+*/
+
+        header{
+            width: 100%;
+            height:auto;
+            font-size: auto;
+        }
+
+        .nav-bar{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .header-nav-wrap a{
+            padding: 1rem;
+            font-size: 15px;
+
+        }
+
+        .header-socials li{
+            padding: 1rem;
+        }
+
+
+         .header-logo img {
+             height: 3rem;
+        }
+
+/* 
+< Media query main (width:  800px)
+============================================================== > 
+*/
+    .s-intro{
+        padding-left: 7vh;
+        
+    }
+
+    .s-intro-name-role h1 {
+        font-size: 480%;
+        font-family: "Frank Ruhl Libre", serif;
+        color: lightgray;
+        font-weight: 200;
+        
+    }
+    
+    .s-intro-name-role h2 {
+        font-size: 130%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+    }
+
+
+/* 
+< Media query About (width:   800px)
+============================================================== > 
+*/
+
+    .full-about{
+        padding-top: 10rem;
+    }
+
+    .about-me-col{
+        display: block;
+        column-count: 1;
+    }  
+
+/* 
+< Media query Skills (width:   800px)
+============================================================== > 
+*/
+        .box-skills{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+   /* 
+        < Media query works (width:   800px)
+        ============================================================== > 
+        */
+   .slide {
+       width: calc(99.999% - 20px);
+   }
+
+
+
+}
+
+
+
+
+/* 
+< Media query For (width:   600px)
+============================================================== > 
+*/
+
+
+
+@media screen and (max-width: 600px) {
+           /* 
+        < Media query works (width:   600px)
+        ============================================================== > 
+        */
+           .slide {
+               width: calc(99.999% - 20px);
+           }
+
+}
+
+
+
+
+
+
+
+
+/* 
+< Media query max-width: 500px
+============================================================== > 
+*/
+
+
+@media screen and (max-width: 500px) {
+
+    /* 
+    < Media query header (width: 500)
+    ============================================================== > 
+    */
+
+    .header-navigation a , .header-socials a{
+        padding: 0.5rem;
+        font-size: 13px;
+
+    }
+
+
+
+
+}
